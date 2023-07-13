@@ -1,0 +1,33 @@
+{
+  "name": "webpack-practice",
+  "version": "1.0.0",
+  "description": "\"# webpack-practice\"",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"&& exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahdi-Niazi/webpack-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahdi-Niazi/webpack-practice/issues"
+  },
+  "homepage": "https://github.com/Mahdi-Niazi/webpack-practice#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

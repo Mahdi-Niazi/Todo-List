@@ -1,16 +1,38 @@
-
-import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const tasks = [
+  {
+    completed: false,
+    description: 'Anything',
+    index: 0,
+  },
+  {
+    completed: false,
+    description: 'something',
+    index: 1,
+  },
+  {
+    completed: false,
+    description: 'everyting',
+    index: 3,
+  },
+];
 
-  
-  // lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const mainList = document.querySelector('.items');
 
-  return element;
-}
+const ul = document.createElement('ul');
 
-document.body.appendChild(component());
+mainList.appendChild(ul);
+
+const showTask = (i) => {
+  const li = document.createElement('li');
+  li.classList.add('inside-list');
+  li.innerHTML = `<div class='items-contents'> <input type='checkbox'><p class='txt'>${
+    tasks[i].description
+  }</p> </div><i class='fa-solid fa-ellipsis-vertical'></i>`;
+
+  ul.appendChild(li);
+};
+tasks.forEach((counter, x) => {
+  showTask(x);
+});

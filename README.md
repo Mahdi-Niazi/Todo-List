@@ -118,7 +118,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ##  Live Demo <a name="live-demo"></a>
 
-- [Todo List](https://mahdi-niazi.github.io/todo-list/)
+- [Todo List](https://mahdi-niazi.github.io/todo-list/dist/index.html)
 
 
 

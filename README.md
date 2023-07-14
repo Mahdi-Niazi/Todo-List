@@ -25,7 +25,7 @@
   - [Run](#run)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
-  - [Live Demo ](#live-demo-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -116,7 +116,7 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 -  **Email Registration**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-##  Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Todo List](https://mahdi-niazi.github.io/todo-list/dist/index.html)
 
@@ -141,7 +141,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Behance Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) that helped me to do this amazing website.
+I would like to thank my coding partners that helped me to do this amazing website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

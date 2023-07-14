@@ -49,11 +49,6 @@ const showTask = (i) => {
   li.appendChild(di);
 
   ul.appendChild(li);
-  // const icon = document.querySelector(".icon");
-  // icon.addEventListener("click", () => {
-  //   deleteTask(i);
-  //   dataLoading();
-  // });
 };
 
 function component() {

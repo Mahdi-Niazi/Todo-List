@@ -3,7 +3,7 @@ const validateForm = () => {
   const task = document.getElementById('task-input');
   if (task && task.value !== '') {
     const newEntry = {
-      index: tasks.length,
+      index: tasks.length + 1,
       completed: false,
       description: task && task.value,
     };

@@ -1,22 +1,6 @@
 import './style.css';
 
-const tasks = [
-  {
-    completed: false,
-    description: 'Anything',
-    index: 0,
-  },
-  {
-    completed: false,
-    description: 'something',
-    index: 1,
-  },
-  {
-    completed: false,
-    description: 'everyting',
-    index: 3,
-  },
-];
+const tasks = [];
 
 const mainList = document.querySelector('.items');
 

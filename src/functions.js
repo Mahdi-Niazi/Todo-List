@@ -1,16 +1,16 @@
 const validateForm = () => {
-  const lists = JSON.parse(localStorage.getItem('tasks')) ?? [];
+  const tasks = JSON.parse(localStorage.getItem('datas')) ?? [];
   const task = document.getElementById('task-input');
-  if (lists && task.value !== '') {
+  if (task && task.value !== '') {
     const newEntry = {
-      index: lists.length,
+      index: tasks.length,
       completed: false,
-      description: lists && task.value,
+      description: task && task.value,
     };
     task.value = '';
 
-    lists.push(newEntry);
-    localStorage.setItem('tasks', JSON.stringify(lists));
+    tasks.push(newEntry);
+    localStorage.setItem('datas', JSON.stringify(tasks));
 
     return false;
   }

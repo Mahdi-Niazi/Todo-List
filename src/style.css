@@ -38,7 +38,6 @@
 .inputs input {
   border: none;
   padding: 5px;
-  width: 100%;
 }
 
 .inputs input[placeholder] {
@@ -50,7 +49,8 @@
 }
 
 .items,
-.inside-list {
+.inside-list,
+#taskForm {
   display: flex;
   justify-content: space-between;
 }
@@ -72,4 +72,8 @@
 
 .clear p {
   text-align: center;
+}
+
+.btn-submit{
+  width: 10%;
 }

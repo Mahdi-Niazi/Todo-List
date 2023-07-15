@@ -3,9 +3,10 @@ const removeAllTask = () => {
 
   tasks = tasks.filter((task) => !task.completed);
 
-  for (let i = 0; i < tasks.length; i += 1) {
-    tasks[i].index = i;
-  }
+  tasks.forEach((task, i) => {
+    task.index = i;
+  });
+
   localStorage.setItem('datas', JSON.stringify(tasks));
   window.location.reload();
 };

@@ -68,6 +68,12 @@
 
 .clear {
   background-color: rgba(237, 238, 238, 0.668);
+  display: flex;
+  justify-content: center;
+}
+
+.clear-btn {
+  border: none;
 }
 
 .clear p {

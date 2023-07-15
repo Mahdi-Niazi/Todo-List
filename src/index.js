@@ -2,6 +2,7 @@ import './style.css';
 
 import validateForm from './functions.js';
 import deleteTask from './remove.js';
+import removeAllTask from './removeAll.js';
 
 let tasks = [];
 
@@ -22,13 +23,24 @@ const showTask = (i) => {
 
   const div = document.createElement('div');
   div.classList.add('items-contents');
-  li.appendChild(div);
 
   const chk = document.createElement('input');
-  chk.setAttribute('type', 'checkbox');
-  div.appendChild(chk);
 
   const paragraph = document.createElement('input');
+  chk.setAttribute('type', 'checkbox');
+  if (tasks[i].completed === false) {
+    chk.removeAttribute('checked');
+  } else {
+    chk.setAttribute('checked', 'checked');
+  }
+  chk.addEventListener('change', () => {
+    if (chk.checked) {
+      paragraph.classList.add('extra');
+    }
+    tasks[i].completed = chk.checked;
+    localStorage.setItem('datas', JSON.stringify(tasks));
+    dataLoading();
+  });
   paragraph.setAttribute('type', 'text');
   paragraph.setAttribute('id', 'taskField');
   paragraph.classList.add('taskField');
@@ -38,7 +50,9 @@ const showTask = (i) => {
     localStorage.setItem('datas', JSON.stringify(tasks));
     dataLoading();
   });
+  div.appendChild(chk);
   div.appendChild(paragraph);
+  li.appendChild(div);
 
   const di = document.createElement('i');
   di.classList.add('fa-solid', 'fa-ellipsis-vertical', 'icon');
@@ -67,6 +81,12 @@ function component() {
 
   tasks.forEach((counter, x) => {
     showTask(x);
+  });
+
+  const inputBtn = document.querySelector('.clear-btn');
+  inputBtn.addEventListener('click', () => {
+    removeAllTask();
+    dataLoading();
   });
 }
 

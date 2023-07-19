@@ -42,7 +42,6 @@ const showTask = (i) => {
     dataLoading();
   });
   paragraph.setAttribute('type', 'text');
-  paragraph.setAttribute('id', 'taskField');
   paragraph.classList.add('taskField');
   paragraph.setAttribute('value', tasks[i].description);
   paragraph.addEventListener('change', () => {
